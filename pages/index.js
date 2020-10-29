@@ -29,9 +29,10 @@ const  Home = () => {
     if(categoria){
 
       //Filtrar por categorias
-      const filtradass = estudio.filter(estud => estud.categorias[0].id == categoria);
+   
+      const filtradass = estudio.filter(estud => estud.categoria.id == categoria);
       
-
+  
       guardarFiltradas(filtradass);
     
     
